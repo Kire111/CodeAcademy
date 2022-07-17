@@ -1,0 +1,34 @@
+@keyframes linear {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translateX(150vh);
+    }
+}
+@keyframes rotate {
+    from{
+        transform: translate(0) rotate(0deg);
+    }
+    to{
+        transform: translateX(150vh) rotate(360deg);
+    }
+}
+section{
+    width: 150vh;
+    height: 150vh;
+}
+.first-box{
+    width: 10%;
+    height: 10%;
+    background-color: blue;
+    margin-top: 20px;
+    animation: linear 4s linear 3s infinite alternate;
+}
+.second-box{
+    width: 10%;
+    height: 10%;
+    background-color: blueviolet;
+    margin-top: 110px;
+    animation: rotate 4s linear 15s infinite alternate;
+}

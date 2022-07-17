@@ -1,0 +1,51 @@
+section {
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+}
+/* go napravii vaka za koa ke mu stavam 10% na 10% height i width da mi izleze kocka */
+.box-green{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 10%;
+    height: 10%;
+    background-color:green;
+   
+}
+.box-blue{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 10%;
+    height: 10%;
+    background-color: blue;
+    
+}
+.box-red{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    width: 10%;
+    height: 10%;
+    background-color: red;
+       
+}
+.box-purple{
+    position: absolute;
+    top: 60%;
+    right: 40%;
+    width: 10%;
+    height: 10%;
+    background-color: purple;
+   }
+.box-pink{
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    width: 10%;
+    height: 10%;
+    background-color:pink;
+   
+}
+
