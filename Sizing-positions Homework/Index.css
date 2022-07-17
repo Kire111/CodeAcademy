@@ -1,0 +1,147 @@
+@keyframes rotate {
+  from{
+  transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+/* Prva kocka */
+@keyframes pulse {
+	0% {
+		transform: scale(0.80);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.80);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+/* Vtora kocka */
+@keyframes swap{
+  0% {transform: translate(0px) ;
+  }
+  50%{
+    transform:translateX(100px) scale(2);
+  }
+  100%{
+    transform:translateX(200px) scale(1);
+  }
+}
+@keyframes four{
+  0% {transform: translate(0px) ;
+  }
+  50%{
+    transform:translateX(-100px) scale(2) ;
+  }
+  100%{
+    transform:translateX(-200px) scale(1);
+  }
+}
+/* Tretata i cetvrtata kocka gi napraviv da se zgolemat dva pati ,no pak da se vratat vo ista golemina . */
+  
+
+#leftBox{
+  float: left;
+  background:rgb(255, 0, 85);
+  width:30%;
+  height:380px;
+  padding: 20 20px 0 20px ;
+  padding-top: 40px;
+  overflow: hidden;
+  transition: width 5s
+   }
+ /* Margin imam iskoristeno kaj trite box elementi za koa ke se vrti vtoriot element da se gleda ne ni bega gore kaj so ne se gleda. */
+#middleBox{
+  float: left;
+  background:rgb(9, 255, 0);
+  width:25%;
+  height:380px;
+  padding: 0 20px 0 20px ;
+  padding-top: 40px;
+  overflow: auto;
+  }
+/* Width tuka mi e ralzicen za da mozat elementite levo i desno u primerot leftBox i rightBox da mi se prosiruvaat so hover  */
+#rightBox{
+  float: left;
+  background:rgb(0, 101, 105);
+  width:30%;
+  height:380px;
+  padding: 0 20px 0 20px ;
+  padding-top: 40px;
+  overflow: visible;
+  transition: width 5s
+}
+footer{
+  text-align: center;
+  padding-top: 50px;
+}
+article#leftBox:hover , article#rightBox:hover{
+width: 35%;
+}
+article#middleBox:hover{
+transform: rotate(90deg);
+}
+header{
+z-index: 1;
+width: 100%;
+
+}
+/* stavame index z deka e 1 za posle so hover da mu stavime pomala vrednost i da dojde odozdole . */
+/* Od ovde pocnuva vtoriot html dokument animation.html */
+nav{
+position: fixed;
+width: 100%;
+z-index: 1;
+background-color: rgb(42, 165, 48); 
+}
+/* Tuka go staviv position fixed za u slucaj stranava se se skrola nav da si stoi sekogas gore */
+
+nav:hover{
+z-index: -1;
+background-color: rgb(0,0,0,0);
+/* tuka mu stavame z-index -1 da imala najmala vrednost i da bide odozdole */
+}
+a{
+text-decoration:none;
+color: tomato;
+}
+
+
+.red{
+  background-color: red;
+  margin: 40px;
+  animation: rotate 5s linear;
+}
+.blue{
+  background-color: blue;
+  margin: 40px;
+  animation: pulse 0.5s infinite alternate;
+}
+.green{
+  background-color:green;
+  margin: 40px;
+  animation: swap 4s infinite linear ;
+}
+.yellow{
+  background-color: yellow;
+  margin: 40px;
+  animation: four 4s infinite linear;
+}
+section{
+  padding-top: 80px;
+
+}
+.boxes .box {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 30px;
+}
+/* Tuka staviv display inline block za da moze da im stavime height i width na elementite.za da izgledaat vizuelno podobro kocktie */

@@ -1,0 +1,27 @@
+body {
+  color: aliceblue;
+  background: black url(Erik\ ten\ Hag.jpg) no-repeat fixed left top;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Tuka go staviv so body tagot budejki sakame sekade da ni bide isti font , isto taka i bojata na tekstot ja staviv tuka vo bodito bela , bidejki stavivme crna pozadina  */
+.color {
+  color: blue;
+}
+.textTransform {
+  text-transform: uppercase;
+}
+#transform {
+  text-transform: lowercase;
+}
+#textDecoration {
+  text-decoration: overline green dotted 5px;
+}
+.textShadow {
+  text-shadow: 3px 3px 3px rgb(0, 247, 255);
+}
+.textSpacing {
+  text-indent: 200px;
+}
+footer {
+  text-align: center;
+}

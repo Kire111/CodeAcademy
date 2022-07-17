@@ -1,0 +1,96 @@
+.homepage{
+    background-color: red;
+    height: 100vw;
+    width: 100vw;
+}
+.box-green{
+    height: 10%;
+    width: 10%;
+    background-color: green;
+   
+}
+.box-blue{
+    height: 10%;
+    width: 10%;
+    background-color: blue;
+}
+.box-pink{
+    height: 10%;
+    width: 10%;
+    background-color: pink;
+}
+.box-black{
+    height: 10%;
+    width: 10%;
+    background-color: black;
+}
+.box-white{
+    height: 10%;
+    width: 10%;
+    background-color: white;
+}
+
+   
+
+.navigation-left{
+    background:rgb(255, 0, 85);
+    width:33%;
+    height:80px;
+    float: left;
+    }
+.navigation-center{
+    background:rgb(0, 255, 13);
+    width:33%;
+    height:80px;
+    float: left;
+    }
+.navigation-right{
+    background:rgb(0, 106, 255);
+    width:33%;
+    height:80px;
+    float: left;
+    }
+    .sidebar-top{
+        background:rgb(123, 255, 0);
+        width:33%;
+        height:200px;
+        
+        }
+    .sidebar-center{
+        background:rgb(89, 0, 255);
+        width:33%;
+        height:200px;
+       
+        }
+    .sidebar-bottom{
+        background:rgb(255, 0, 47);
+        width:33%;
+        height:200px;
+       
+        }
+        .homepage{
+            padding-top: 80px ;
+            }
+        .content-green{
+            background:rgb(34, 255, 0);
+            width:33%;
+            height:10px;
+                                   }
+        .content-blue{
+            background:rgb(89, 0, 255);
+            width:33%;
+            height:10px;
+                                  }
+        .content-red{
+            background:rgb(255, 0, 47);
+            width:33%;
+            height:10px;
+                                   }
+            .content-black{
+                background:rgb(24, 2, 6);
+                width:33%;
+                height:10px;
+               
+                               }
+    
+    
