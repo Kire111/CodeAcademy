@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed
+};
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  }
+
+.page-header {
+  flex: 1;
+  background-color:	rgb(80,80,80);
+  display: flex;
+  justify-content: center;
+  }
+
+.page-content {
+  flex: 7;
+  display: flex;
+  justify-content: space-between;
+  }
+
+.sidebar-container {
+  border-right: 1px solid gray;
+  flex: 1;
+  background-color: rgb(192,192,192);
+}
+
+.sidebar-menu {
+  padding: 0;
+  margin: 0;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30%;
+  padding-top: 100px;
+  list-style-type: none;
+    }
+    /* Tuka staviv so padding left za da mi gi naredi vo prava linija nadolu */
+
+.sidebar-menu .sidebar-menu-item {
+  margin-top: 10px;
+  cursor: pointer;
+   }
+   .sidebar-menu-link{
+    text-decoration: none;
+   }
+   .sidebar-menu-link:link {
+    color: red;
+  }
+  
+  /* visited link */
+  .sidebar-menu-link:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  .sidebar-menu-link:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  .sidebar-menu-link:active {
+    color: blue;
+  }
+
+.sidebar-menu
+  .sidebar-menu-item
+  .sidebar-menu-item-inner-wrapper
+  .menu-item-image {
+  width: 18px;
+  height: 18px;
+}
+    /* Tuka gi staviv vaka bidejki na pocetok mislev deka ke go iskoristam i na dr mesto ova menu-item-image */
+.main-content {
+  flex: 3;
+  background-color: rgb(192,192,192);
+  height: 80vh;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.blog-post-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.blog-post {
+  padding: 20px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.blog-post-header {
+  display: flex;
+  }
+
+.blog-post-author-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.blog-post-author-name {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.blog-post-author-image-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.blog-post-author-image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-post-content-container {
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.page-footer {
+  flex: 1;
+  background-color:	rgb(80,80,80);
+  display: flex;
+  justify-content: center;
+}
+blog-post-location-image{
+ 
+  height: 450px;
+  width: 850px;
+}
+blog-post-location-img-wrapper img{
+  height: 100%;
+  width: 100%;
+}

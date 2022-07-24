@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(178, 224, 196);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+span {
+    margin-left: 10%;
+}
+
+.col-lg-3, .col-lg-6 {
+    padding: 0 30px;
+} 
+
+p {
+    padding: 3%;
+}
+/* Ova e eden od postovite od prethodnoto domasno so flex i grid */
+.blog-post {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+  }
+  
+  .blog-post-header {
+    display: flex;
+    }
+  
+  .blog-post-author-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-between;
+  }
+  
+  .blog-post-author-name {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .blog-post-content-container{
+    padding-left: 60px;
+  }

@@ -1,0 +1,28 @@
+body{
+    width: 800px;
+}
+.navbar{
+    height: 50px;
+    width: 800px;
+    background-color: aqua;
+    display: flex;
+    }
+.content{
+    height: max-content;
+    width: 100vh;
+    background-color: brown;
+    margin: auto;
+}
+.position{
+    height: 30px;
+    width: 50px;
+    background-color: blue;
+    margin-left: 20px;
+   
+    
+}
+.nav-right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    }

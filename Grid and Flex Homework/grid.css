@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  background-color:	rgb(80,80,80);
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: space-between;
+  background-color: rgb(192,192,192);
+}
+
+.sidebar-container {
+  display: grid;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: rgb(192,192,192);
+  border-right: 1px solid gray;
+  }
+  .sidebar-menu-link{
+    text-decoration: none;
+   }
+   .sidebar-menu-link:link {
+    color: red;
+  }
+  
+  /* visited link */
+  .sidebar-menu-link:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  .sidebar-menu-link:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  .sidebar-menu-link:active {
+    color: blue;
+  }
+  .sidebar-menu{
+  list-style-type: none;
+}
+/* Ova e za linkovite da moze da se vidi koi linkovi se veke otvoreni , koi ne se  */
+
+.main-content {
+  height: 70vh;
+  overflow-y: auto;
+  padding: 50px;
+  background-color: rgb(192,192,192);
+}
+/* overflow po y oska za da ni skrola samo po y oskata */
+.blog-post-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  }
+/* Tuka staviv so gap za da mi gi odeli postovite eden od drug za 20px */
+.blog-post {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  background-color: white;
+}
+
+.blog-post-header {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.blog-post-content-container {
+  padding-left: 75px;
+}
+
+.blog-post-author-details {
+  display: grid;
+}
+
+.blog-post-author-name {
+  font-weight: bolder;
+  font-size: 20px;}
+
+.page-footer {
+  text-align: center;
+  background-color:	rgb(80,80,80);
+}
