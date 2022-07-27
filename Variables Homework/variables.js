@@ -7,10 +7,10 @@ let residence = "Skopje";
 
 let kire={
     name : names,
-    age:age,
-    job:job,
-    gender:gender,
-    residence:residence,
+    kireAge:age,
+    kireJob:job,
+    kireGender:gender,
+    kireResidence:residence,
  }
    console.log(kire)
    
