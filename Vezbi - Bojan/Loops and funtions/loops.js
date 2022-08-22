@@ -10,7 +10,7 @@ function sobiranje (niza){
     }
     return sum
 }
-console.log(sobiranje([22,2,2]))
+console.log(sobiranje([1,5, 7, 12 ,10]))
 
 // 2 . Da se napravi funkcija koja kje ni dade koi broevi se duplikati vo niza
 // da raboti za bilo koja niza
@@ -81,7 +81,6 @@ function selectionSort(niza) {
     }
     return niza
 }
-
 
 function sortITrgniDuplikati(niza) {
     niza = selectionSort(niza)
