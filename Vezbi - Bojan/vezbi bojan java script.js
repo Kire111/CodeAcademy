@@ -51,9 +51,21 @@
 // // let niza = [1,2,3,4,5]\
 // //     for(let i =niza.length-1 ; i<0;i--)
 
-// // console.log
+// // // console.log
 
-// let niza = [1,2,1,3,4,2,3];
+// // let niza = [1,2,1,3,4,2,3];
+
+// let niza = [1,2,23,123,3,2,123,321,123];
+// console.log (niza.filter(niza))
 
 
+let arr = [
+    { name: "John", address: { street: "avenue 2", number: 23 } },
+    { name: "Doe", address: { street: " avenue 1", number: 23 } },
+    { name: "Luka", address: { street: "avenue 5 ", number: 22 } },
+    { name: "Jovan", address: { street: "avenue 2", number: 12 } },
+    { name: "Angel", address: { street: " avenue 4", number: 3 } },
+    { name: "Kristijan", address: { street: "avenue 2", number: 23 } },
+  ];
 
+ 
