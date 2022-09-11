@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form method="post" id="form" action="">
+    onsubmit="return validateForm()" action="">
+        <label for="name">Name:</label>
+        <input name="name" type="text" id="name" onblur="blured()"
+        onkeydown="key()"/><br />
+        <div class="eventName"></div>
+        <label for="lastname">Lastname:</label>
+        <input name="lastName" type="text" id="lastName"onblur="blured()"
+        onkeydown="key()" /><br />
+        <div class="eventLastName"></div>
+        <label for="email">Email:</label>
+        <input name="email" type="text" id="email" onblur="blured()"
+        onkeydown="key()"/><br />
+        <div class="eventEmail"></div>
+        <label for="phone">Phone:</label>
+        <input name="phone" type="text" id="phone" onblur="blured()"
+        onkeydown="key()"/><br />
+        <div class="eventPhone"></div>
+        <label for="adress">Adress:</label>
+        <input name="adress" type="text" id="adress" onblur="blured()"
+        onkeydown="key()"/><br />
+        <div class="eventAdress"></div>
+        <button id="button" type="submit">Submit</button>
+      </form> -->
+      <style>
+        .eventName,
+        .eventLastname,
+        .eventEmail,
+        .eventPhone,
+        .eventAdress {
+          color: red;
+        }
+      </style>
+      <body>
+        <form id="form" action="" onsubmit="return validateForm()">
+          <label for="">Name</label><br />
+          <input
+            class="name"
+            type="text"
+            onblur="blur()"
+            onkeydown="key()"
+          /><br />
+          <div class="eventName"></div>
+          <label for="">Last Name</label><br />
+          <input
+            class="lastname"
+            type="text"
+            onblur="blur()"
+            onkeydown="key()"
+          /><br />
+          <div class="eventLastname"></div>
+          <label for="">Email</label><br />
+          <input
+            class="email"
+            type="text"
+            onblur="blur()"
+            onkeydown="key()"
+          /><br />
+          <div class="eventEmail"></div>
+          <label for="">Phone</label><br />
+          <input
+            class="phone"
+            type="text"
+            onblur="blur()"
+            onkeydown="key()"
+          /><br />
+          <div class="eventPhone"></div>
+          <label for="">Adress</label><br />
+          <input
+            class="adress"
+            type="text"
+            onblur="blur()"
+            onkeydown="key()"
+          /><br />
+          <div class="eventAdress"></div>
+          <button id="button" type="submit">submit</button>
+          <button id="reset" type="submit">reset</button>
+        </form>
+     
+    <script src="/DOM Events Homework/events.js"></script>
+</body>
+</html>
