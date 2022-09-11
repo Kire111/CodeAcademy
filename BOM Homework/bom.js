@@ -1,4 +1,4 @@
-// 1 Zadaca 
+// 1 Zadaca Go postaviv kako stoperica so minuti i sekundi .
 let [milliseconds,second,minute,] = [0,0,0];
 let timerRef = document.querySelector('.mainTime');
 let int = null;
@@ -32,7 +32,39 @@ let s = second < 10 ? "0" + second : second;
 let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
 timerRef.innerHTML = ` ${m} : ${s} : ${ms}`;
 }
+// Zadaca 2 Tuka ne mi bese jasno kako da go sredam toa so minutite i sekundite so delay i go napraviv so console.log da ima delay i da zastanuva do 15 .
+let timer = 0;
+const argument = function (delay, num) {
+  setTimeout(() => {
+    timing = setInterval(() => {
+      console.log(timer++);
+      if (timer === num + 1) {
+        clearInterval(timing);
+        timer = 0;
+      }
+    }, 1 * 1000);
+  }, delay * 1000);
+};
 
+const Start = document
+  .querySelector("#start")
+  .addEventListener("click", function () {
+    argument(5, 15);
+  });
+
+const Stop = document
+  .querySelector("#stop")
+  .addEventListener("click", function () {
+    clearInterval(timing);
+  });
+
+const Reset = document
+  .querySelector("#reset")
+  .addEventListener("click", function () {
+    clearInterval(timing);
+    console.clear();
+    timer = 0;
+  });
 // 3 Zadaca 
 function url() {
     window.location.assign("https://www.youtube.com/watch?v=_7rT-ixivWU");
