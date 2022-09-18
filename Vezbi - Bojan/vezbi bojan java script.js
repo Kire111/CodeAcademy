@@ -69,5 +69,13 @@
 //   ];
 
  
-let arr = [1, 2, 23, 123, 3, 2, 123, 321, 123];
-console.log(arr.filter((niza) => niza === 123));
+// let arr = [1, 2, 23, 123, 3, 2, 123, 321, 123];
+// console.log(arr.filter((niza) => niza === 123));
+
+async function Getdata() {
+await fetch('https://fakestoreapi.com/products?limit=5')
+.then(response => response.json())
+.then ( data => console.log(data));}
+Getdata();
+
+function 

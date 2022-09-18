@@ -7,7 +7,90 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" value="Back" onclick="goBack()">
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <button onclick="getXMLFile()">Get DATA with AJAX</button>
+        <!-- <button onclick="fetchXML()">Get DATA with Fetch</button> -->
+        <table id="demo"></table>
+    ​
+        <script>
+          let getXMLFile = function () {
+            let request = new XMLHttpRequest();
+            request.open("GET", "gethint.xml");
+            request.setRequestHeader("Content-Type", "text/xml");
+            request.onreadystatechange = function () {
+              if (request.readyState == 4) {
+                SetXMLData(request.responseXML);
+              }
+            };
+            request.send();
+          };
+    ​
+          function SetXMLData(xml) {
+            console.log(xml);
+            const x = xml.getElementsByTagName("CD");
+            let table = "<tr><th>Artist</th><th>Title</th></tr>";
+            for (let i = 0; i < x.length; i++) {
+              table +=
+                "<tr><td>" +
+                x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+            console.log(table);
+            document.getElementById("demo").innerHTML = table;
+          }
+    ​
+          fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            body:
+              "title=" +
+              encodeURIComponent("My awesome new article") +
+              "&body=" +
+              encodeURIComponent("This is the text"),
+          })
+            .then(function (response) {
+              console.log(response);
+              // The API call was successful!
+              if (response.ok) {
+                return response.text();
+              }
+            })
+            .then(function (data) {
+              console.log(data);
+            })
+            .catch(function (err) {
+              console.warn(err);
+            });
+    ​
+          fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "GET",
+          })
+            .then(function (response) {
+              // The API call was successful!
+              if (response.ok) {
+                return response.json();
+              }
+            })
+            .then(function (data) {
+              // This is the JSON from our response
+              console.log(data);
+            })
+            .catch(function (err) {
+              // There was an error
+              console.warn("Something went wrong.", err);
+            });
+        </script>
+      </body>
+    </html>
     <script src="/Vezbi Home/vezbi.js"></script>
 </body>
 </html>
