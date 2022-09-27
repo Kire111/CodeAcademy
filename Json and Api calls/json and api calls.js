@@ -34,11 +34,10 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
     }
   })
   .then(function (data) {
-    let kire = JSON.parse(data);
-    console.log(kire);
+    
     for (let i = 0; i < 10; i++) {
       let row = document.createElement("tr");
-      row.innerHTML = (data[i]);
+      row.innerHTML = JSON.stringify(data[i]);
       firstTable.appendChild(row);
                  
     }
