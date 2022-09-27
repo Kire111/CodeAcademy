@@ -1,8 +1,8 @@
 // Zadaca 1
 let postObj = { 
     id: 1, 
-    title: "What is AJAX", 
-    body: "AJAX stands for Asynchronous JavaScript..."
+    name: "Kire", 
+    lastname: "Zlatkovski"
 }
  
 let post = JSON.stringify(postObj)
@@ -39,6 +39,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
       let row = document.createElement("tr");
       row.innerHTML = JSON.stringify(data[i]);
       firstTable.appendChild(row);
+      console.log(data[i]);
                  
     }
   })
