@@ -37,8 +37,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
     
     for (let i = 0; i < 10; i++) {
       let row = document.createElement("tr");
-      let a = (data[i].id + " " +data[i].title);
-      row.innerHTML = a;
+      row.innerHTML = Object.values(data[i]);
       firstTable.appendChild(row);
       console.log(data[i]);
                  
